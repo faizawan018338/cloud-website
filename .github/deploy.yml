@@ -21,4 +21,4 @@ jobs:
 
       - name: Sync Files to S3
         run: |
-          aws s3 sync . s3://APNI-NAYI-BUCKET-KA-NAAM --delete --content-type "text/html"
+          aws s3 sync . s3://crockery-website --delete --content-type "text/html"
