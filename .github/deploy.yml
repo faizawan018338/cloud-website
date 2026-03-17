@@ -20,8 +20,6 @@ jobs:
           aws-region: us-east-1   # <-- check this
 
       - name: Sync Files to S3
-        run: |
-          aws s3 sync . s3://crockery-website \
-            --exclude ".git/*" \
+        aws s3 sync ./testing s3://crockery-website --delete
             --exclude ".github/*" \
             --delete
